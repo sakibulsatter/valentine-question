@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #6c757d;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#videoContainer {
+  margin-top: 25px;
+}
+
+video {
+  width: 90vw;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  font-size: 24px;
+  animation: floatUp 4s linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+}
+
